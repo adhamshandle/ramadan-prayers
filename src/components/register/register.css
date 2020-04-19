@@ -1,0 +1,97 @@
+.login-content form input:not([type=checkbox]) {
+    border: 1px solid #d6dbe4;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 15px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.login-content form input.login-sub {
+    background: #ffcb09 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 5px;
+    right: 5%;
+    padding: 0 40px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    width: 130px;
+    width: inherit;
+    font-family: CoTextArabic-Bold;
+    position: absolute;
+
+}
+.login-content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #7c7c7a;
+    margin-bottom: 15px;
+}
+
+
+input::placeholder{
+    padding-right: 1%;
+}
+/*  */
+
+.Login {
+    padding: 60px;
+    background: #f6f6f6;
+}
+.login-content {
+    background: #fff none repeat scroll 0 0;
+    padding: 25px;
+    border-radius: 5px;
+    height: 470px;
+}
+.login-title {
+    color: #2a2a2a;
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-bottom: 13px; */
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: CoTextArabic-Bold;
+
+}
+.Login {
+    text-align: right;
+}
+
+.login-content form label {
+    color: #444;
+    margin-bottom: 5px;
+    text-align: right;
+    float: right;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+.login-content form {
+    margin-top: 30px;
+}
+
+
+
+.login-lost span.forgot-login a{
+    float: right;
+    color: #444;
+}
+
+.Login .form-group {
+    display: inline;
+}
+
+.login-lost {
+    margin-top: 45px;
+}
+.Reset .login-content.mb-30 {
+    height: 780px;
+}
+/* end login */

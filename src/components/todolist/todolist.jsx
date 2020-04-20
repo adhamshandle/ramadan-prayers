@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import TodoForm from './todoform'
 import Todo from './todo'
+import './todo.css'
 class TodoList extends Component {
     state = {
         todos: [],
@@ -48,13 +49,17 @@ class TodoList extends Component {
             todos = this.state.todos.filter(x => x.complete);
         }
         return (
-            <div>
+            <div class="wrap-list">
                 <TodoForm onSubmit={this.addTodo} />
-                {todos.map(todo => (
-                    <Todo toggleComplete={() => this.toggleComplete(todo.id)}
-                        key={todo.id}
-                        todo={todo} />
-                ))}
+                <div >
+                    <ol class="list">
+                        {todos.map(todo => (
+                            <Todo toggleComplete={() => this.toggleComplete(todo.id)}
+                                key={todo.id}
+                                todo={todo} />
+                        ))}
+                    </ol>
+                </div>
                 <div>todos left : {this.state.todos.filter(x => !x.complete).length}</div>
                 <div>
                     <button onClick={() => this.updateTodoToShow("all")}>all</button>

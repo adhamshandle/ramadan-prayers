@@ -1,9 +1,10 @@
 import React from 'react'
 export default (props) => (
-    <div
-        style={{
+    <li onClick={props.toggleComplete}>
+        <input type="checkbox" id={`${props.todo.id}`} checked={props.todo.complete}
+
+        />
+        <label style={{
             textDecoration: props.todo.complete ? 'line-through' : ""
-        }}
-        onClick={props.toggleComplete}>
-        {props.todo.text}</div>
+        }} >{props.todo.text}</label></li>
 )

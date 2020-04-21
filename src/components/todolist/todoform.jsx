@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import shortid from 'shortid'
+import { Button } from 'react-bootstrap'
 class TodoForm extends Component {
     state = {
         text: ""
@@ -23,11 +24,11 @@ class TodoForm extends Component {
     }
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form style={{marginTop:'3%'}} onSubmit={this.handleSubmit}>
                 <input placeholder="todo..."
                     onChange={(e) => this.handleChange(e)}
                     value={this.state.text} />
-                    <button onClick={this.handleSubmit}>add todo</button>
+                    <Button style={{textAlign:'center', fontSize:'12px',marginLeft:'2%',fontWeight:'bold',textTransform:'capitalize'}} variant="success" onClick={this.handleSubmit}>add todo</Button>
             </form>
         )
     }

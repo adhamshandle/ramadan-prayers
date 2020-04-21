@@ -16,7 +16,7 @@ class Login extends React.Component {
                 <div className="login-area gray-bg">
                     <div className="container">
                         <Row>
-                            <Col md={6}>
+                            <Col md={12}>
                                 <div className="login-content mb-30">
                                     {/* <h2 className="login-title">{this.props.strings.login} <span className="are-vendor"><a href="https://dashboard.bab-makkah.qpix.io/">{this.props.strings.loginVen}</a></span></h2> */}
                                     <p>تسجيل الدخول</p>

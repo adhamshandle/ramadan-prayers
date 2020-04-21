@@ -164,7 +164,7 @@ class Register extends React.Component {
                 <div className="login-area gray-bg">
                     <div className="container">
                         <Row>
-                            <Col mdOffset={3} md={6}>
+                            <Col mdOffset={3} md={12}>
 
                                 <div className="login-content mb-30">
                                     {/* <h2 className="login-title">{this.props.strings.registerVendor}</h2> */}
@@ -173,17 +173,17 @@ class Register extends React.Component {
                                     <form onSubmit={this.handleLogin.bind(this)}>
                                         <FormGroup controlId="vendor-register">
                                             <Row>
-                                                <Col md={6}>
+                                                <Col md={12}>
                                                     <label>اﻷسم</label>
                                                     <FormControl id="vendor-nameAr" onKeyPress={(e) => this.checkArLang(e)} type="text" onChange={(e) => this.setState({ nameAr: e.target.value })} placeholder="اسم" />
                                                 </Col>
                                             </Row>
                                             <Row>
-                                                <Col md={6}>
+                                                <Col md={12}>
                                                     <label>البريد اﻷلكتروني*</label>
                                                     <FormControl id="vendor-email" type="email" onChange={(e) => this.setState({ email: e.target.value })} placeholder="example@domain.com" />
                                                 </Col>
-                                                <Col md={6}>
+                                                <Col md={12}>
                                                     <label>التليفون المحمول*</label>
                                                     <FormControl id="vendor-phoneNumber" type="text" onChange={(e) => this.setState({ phone_number: e.target.value })} placeholder="0123456789" />
                                                 </Col>

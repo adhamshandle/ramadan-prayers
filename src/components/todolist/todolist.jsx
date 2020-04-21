@@ -3,6 +3,7 @@ import { withRouter, Link } from 'react-router-dom'
 import TodoForm from './todoform'
 import Todo from './todo'
 import './todo.css'
+import { Button } from 'react-bootstrap'
 class TodoList extends Component {
     state = {
         todos: [],
@@ -60,13 +61,13 @@ class TodoList extends Component {
                         ))}
                     </ol>
                 </div>
-                <div>todos left : {this.state.todos.filter(x => !x.complete).length}</div>
+                <div style={{marginBottom:'2%',marginTop:'4%'}}>todos left : {this.state.todos.filter(x => !x.complete).length}</div>
                 <div>
-                    <button onClick={() => this.updateTodoToShow("all")}>all</button>
-                    <button onClick={() => this.updateTodoToShow("active")} >active</button>
-                    <button onClick={() => this.updateTodoToShow("complete")}>complete</button>
-                    <button
-                        onClick={() =>
+                    <Button  variant="warning" onClick={() => this.updateTodoToShow("all")}>all</Button> 
+                    <Button  variant="warning" onClick={() => this.updateTodoToShow("active")} >active</Button> 
+                    <Button  variant="warning" onClick={() => this.updateTodoToShow("complete")}>complete</Button>
+                    <Button
+ variant="warning"                         onClick={() =>
                             this.setState({
                                 todos: this.state.todos.map(todo => ({
                                     ...todo,
@@ -76,7 +77,7 @@ class TodoList extends Component {
                             })}
                     >
                         toggle all complete : {`${this.state.toggleAllComplete}`}
-                    </button>
+                    </Button> 
                 </div>
             </div>
         )
